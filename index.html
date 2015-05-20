@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>knarfishness.net</title>
+
+<!-- CSS File Links --> 
+<link rel="stylesheet" type="text/css" media="screen" href="site_files/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="site_files/imageMenu.css">
+<link rel="stylesheet" type="text/css" media="screen" href="site_files/lightbox.css">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://php.radford.edu/~comm/wordpress/?feed=rss2" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="https://php.radford.edu/~comm/wordpress/?feed=atom" />
+
+<!-- JavaScript Links -->
+<script type="text/javascript" src="site_files/mootools.js"></script>
+<script type="text/javascript" src="site_files/imageMenu.js"></script>
+<script type="text/javascript" src="site_files/lightbox.js"></script>
+<script type="text/javascript" src="site_files/images.js"></script>
+<script type="text/javascript" src="site_files/mooefx.js"></script>
+
+<!-- Start of Woopra Code -->
+<script type="text/javascript">
+function woopraReady(tracker) {
+    tracker.setDomain('knarfishness.info');
+    tracker.setIdleTimeout(300000);
+    tracker.track();
+    return false;
+}
+(function() {
+    var wsc = document.createElement('script');
+    wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+    wsc.type = 'text/javascript';
+    wsc.async = true;
+    var ssc = document.getElementsByTagName('script')[0];
+    ssc.parentNode.insertBefore(wsc, ssc);
+})();
+</script>
+<!-- End of Woopra Code -->
+
+<script type="text/javascript">
+	window.addEvent('domready', function()
+	{
+			var myMenu = new ImageMenu($$('#kwick .kwick'),{openWidth:200,onClick:openThumbs,start:0});
+			
+			Lightbox.init({showControls: true});
+		
+			var Tips2 = new Tips($$('.Tips2'), 
+				{
+					initialize:function()
+						{
+							this.fx = new Fx.Style(this.toolTip, 'opacity', {duration: 300, wait: false}).set(0);
+						},
+					onShow: function(toolTip) 
+						{
+							this.fx.start(1);
+						},
+					onHide: function(toolTip) 
+						{
+							this.fx.start(0);
+						}
+				});
+	
+		});
+</script>
+</head>
+<!-- End of Head -->
+
+<body> 
+
+<!-- ImageMenu Images -->
+
+<div id="images">
+	<img src="site_files/images/menu_01.jpg">
+	<img src="site_files/images/menu_02.jpg">
+	<img src="site_files/images/menu_03.jpg">
+	<img src="site_files/images/menu_04.jpg">
+	<img src="site_files/images/menu_05.jpg">
+	<img src="site_files/images/menu_06.jpg">
+
+</div>
+
+<div id="container">
+	
+ <!-- Drop-Down Identifiers, remember that JavaScript counts up from ZERO, so home is really 0 -->  
+    
+	<div class="title">
+		<a href="javascript:;" onClick="openThumbs('0');">
+        <img src="site_files/images/header_01.jpg" alt="header" border="none" style="float:left"/></a>
+        
+        <a href="http://www.knarfishness.net/blog" target="_self">
+        <img src="site_files/images/header_02.jpg" alt="header2" border="none" style="float:right"/></a>
+       </div>
+	
+	<div id="kwick">
+
+		<ul class="kwicks">
+			<li class="kwick opt1"><span>home</span></li>
+			<li class="kwick opt2"><span>about</span></li>
+			<li class="kwick opt3"><span>contact</span></li>
+            <li class="kwick opt4"><span>webdesign</span></li>
+			<li class="kwick opt5"><span>graphic design</span></li>
+
+			<li class="kwick opt6"><span>photography</span></li>
+		</ul>
+	</div>
+    
+    <!--
+    0. Home
+    1. About
+    2. Contact
+    3. Web Design
+    4. Graphic Design
+    5. Photography
+    6. About This Site
+    -->
+    
+<!-- ---------------------------------------------0---------------------------------------------------- -->
+	
+	<div id="home" class="popoutContainer"> 
+		
+    		<div class="content">
+				<img src="site_files/images/welcome.png" alt="welcome" /><br />
+                    <p>&nbsp;What a long, strange trip it's been. Well, it was about time for a revision. The old page, while interesting
+                       in it's own right, was WAY too dark, and didn't play well with Internet Explorer. Not that I've grown any fonder
+                       of IE, but compliancy is important, at least when it comes to W3C standards.</p>
+
+                    <br />
+                    <p>So, without further ado, Welcome! This is this the online portfolio of one 'Frank Avery'. "But wait, Frank, it
+                       says 'knarfishness' at the top!?" Well...yeah, it does. 'knarfishness' sounds a lot cooler than 'Frank Avery'.
+                       Take one name from the 1800's, add an equal length, non-demoninational last name, and you've got a savory recipie
+                       for boring. If you wanna know more about where 'knarfishness' came from, see the About this Site link in the footer.</p>
+                     <br />
+                     <p>Other than that, portfolio stuff that I'm working on/completed is categorized in that top menu up there. Feel free to 
+                        browse around, and if you've got input/feedback/cake/cookies, please use the information on the contact page to give
+                        me a shout.</p>
+                      <br /><br />
+                      <p align="right">Thanks for looking, it means a lot.</p>
+                      <br />
+
+                      <p align="right">.:knarfishness:.</p>
+      
+      			<img src="site_files/images/recentwork.png" alt="recent work" /><br />
+                    <p>&nbsp;I've been messing around with a Photoshop effect called VistaAeroFX, which is basically what Windows Vista does to attempt
+                    text overlay without ruining an image or being unreadable. Here are my first 2 experiments with it.</p><br />
+    
+                <div class="gallery" style="text-align:center">
+                    <a href="site_files/portfolio/web/aeroFX.jpg" rel="lightbox[home]" title="Vista Aero FX : Aestetic Text Overlay">
+                    <img src="site_files/portfolio/web/aeroFXthumb.gif" alt="thumb" width="150" height="65" border="0" /></a>
+            
+                    <a href="site_files/portfolio/web/mstdhead.png" rel="lightbox[home]" title="AeroFX in a sample header image">
+                    <img src="site_files/portfolio/web/mstdheadthumb.gif" alt="thumb" width="150" height="65" border="0" /></a>    
+                </div>
+
+			
+		</div>
+	</div>
+
+<!-- ---------------------------------------------1---------------------------------------------------- -->
+	
+	<div id="about" class="popoutContainer"> 
+	<div class="content">
+		
+
+	<img src="site_files/images/about.png" alt="about" /><br />
+    <img class="contentimage" align="right" src="site_files/portfolio/images/me.jpg" alt="me" />
+    <p>As the frontpage made clear, my name isn't 'knarfishness'. I'm Frank Avery, a junior in the Web Design at Radford University with a 
+    	heavy interest in graphic design. I'm scheduled to graduate in May of 2009.
+    	Whee, exciting, I know. <br /><br />
+
+        I tend to dabble in Dreamweaver, Photoshop, and the rest of CS3 really, minus InDesign. Print design is an interesting study
+        but not particularly my cup of tea. I've had experience with 35mm photography and developing, but I tend to stick in the digital
+        realm (darkroom chemicals make my head hurt, heh).<br /><br />
+        As for hobbies, I spend most of my free time surfing the internet and watching old episodes of amazing shows that aren't aired anymore. 
+       Though I've been described as musically inclined (my poor guitar skills beg to differ) I don't really work a lot with audio, besides the occasional cut-and-paste 
+        edit in Audicity or GarageBand.<br /><br />
+        For those interested, my resume is linked at the bottom of this page.
+        <br />
+        Hope you enjoy poking around my various experiments and projects.</p>
+        
+        <div class="gallery" style="text-align:center">
+    	<img src="site_files/images/Resume.jpg" alt="resume" /></div>
+      
+
+
+</div></div>
+
+<!-- ---------------------------------------------2---------------------------------------------------- -->
+	
+	<div id="contact" class="popoutContainer"> 
+	<div class="content">
+		
+<img class="contentimage" align="right" src="site_files/images/contact.jpg" alt="phone" />
+	<img src="site_files/images/contact.png" alt="" /><br />
+    
+    <p> Here's the comprehensive list of all the connections I have to the outside world. See if any of 'em come in handy.</p><br />
+    
+	<ul>
+    <li>Home - (804) 469-3604</li>
+
+    <li>Cell - (804) 731-9267</li>
+    <li>Apartment - (540) 831-4110</li>
+    <li>Personal Email - popperthepenguin@gmail.com</li>
+    <li>School Email - favery@radford.edu</li>
+    <li>Home Mail - 21810 Rainey Road | Dinwiddie, VA 23841</li>
+    <li>School Mail - 704 Howe St. Apt. 2 | Radford, VA 24141</li>
+
+    <li>AIM: PopperThePenguin</li>
+    </ul><br />
+    <p>Some things to consider:</p><br />
+    <ul>
+    <li>I don't <i>always</i> pick up my cell phone. The geniuses at Motorola designed a phone with a speaker on the back, so when pocketed, it's really quiet. Don't
+     think that I'm ignoring you, just leave a voicemail. Unless I <i>am </i> ignoring you, and in that case, go away.</li>
+
+    <li>The apartment phone is a really good way to get in touch with me, and no one seems to use it. It rings, it's loud, and it's batteries don't die randomly.</li>
+    <li>The email from Radford gets forwarded to gMail, so send your mail to either one, I'll get it.</li>
+    <li>Please remember that I'm not at "home" most of the time, so if you call my house during the semester, most likely, you'll get my mom. Be nice.</li>
+    </ul><br /><br />
+    <p>Talk to you soon.</p>
+
+
+</div></div>
+
+<!-- ---------------------------------------------3---------------------------------------------------- -->
+	
+	<div id="webdesign" class="popoutContainer"> 
+	<div class="content">
+		
+
+	<img src="site_files/images/webdesign.png" alt="webdesign" />
+    <br />
+    <p>Web design is really what you could call my passion. I've been at it for the last 5 or so years, and it's been a blast. It
+    	took me about a week to graduate from Windows Notepad, to Microsoft FrontPage, to what was then Macromedia Dreamweaver MX.
+        Ever since then I've been messing around with tutorials on the net. Despite taking college level courses in this kind of 
+        stuff, there are some really cool scripts and templates out there that can really put you on the fast track to figuring out
+        XHTML, PHP, JavaScript and Flash out there on the web. <br /><br />
+        
+        Below is the basic scraps of what I've done over the last year (although some of it is rather old : /). 3 separate 
+        experiments with knarfishness.net's design, and the recently halted proposal for the RU School of Communications, which
+        is the basis for what became this site. The rest is recent experiments with web 2.0 style effects, and a little history
+        on the orignal 'knarfishness'. He wore a dress, and he was still cool. There's a life lesson for you. Enjoy!</p><br />
+    <div class="gallery">
+
+    	  <a href="site_files/portfolio/web/version2.jpg" rel="lightbox[web]" title="Version 2.5 of knarfishness.net">
+          <img src="site_files/portfolio/web/thumbs/version 2thumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+          
+          <a href="site_files/portfolio/web/version 3.jpg" rel="lightbox[web]" title="Version 3.0 of knarfishness.net">
+          <img src="site_files/portfolio/web/thumbs/version 3thumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+          
+          <a href="site_files/portfolio/web/version 4.jpg" rel="lightbox[web]" title="Version 4.0 of knarfishness.net">
+          <img src="site_files/portfolio/web/thumbs/version 4thumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+          
+          <a href="site_files/portfolio/web/commsite.jpg" rel="lightbox[web]" title="RU School of Communication Design Proposal">
+          <img src="site_files/portfolio/web/thumbs/commsitethumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+          
+          <a href="site_files/portfolio/web/aeroFX.jpg" rel="lightbox[web]" title="AeroFX Experiment">
+
+          <img src="site_files/portfolio/web/thumbs/aeroFXthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+          
+          <a href="site_files/portfolio/web/mstdhead.jpg" rel="lightbox[web]" title="AeroFX applied in a header for the MSTD Dept.">
+          <img src="site_files/portfolio/web/thumbs/mstdheadthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+          
+          <a href="site_files/portfolio/web/header.jpg" rel="lightbox[web]" title="Old header for the knarfishness.net blog.">
+          <img src="site_files/portfolio/web/thumbs/headerthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+          
+          <a href="site_files/portfolio/web/knarfsig.jpg" rel="lightbox[web]" title="Forum signature for the original knarfishness, an undead mage in World of Warcraft.">
+          <img src="site_files/portfolio/web/thumbs/knarfsigthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+    </div>      
+
+</div></div>
+
+<!-- ---------------------------------------------4---------------------------------------------------- -->
+	
+	<div id="graphicdesign" class="popoutContainer"> 
+	<div class="content">
+		
+
+	<img src="site_files/images/graphicdesign.png" alt="graphicdesign" />
+    <br />
+    <p>Graphic Design, while no longer part of my current major, effects most of what I do for the web. The theories and concepts are very important
+    	to understand how people see things, what order they see them in, and how much they like it. The following works were completed in an Introduction
+        to Graphic Design class here at RU.</p><br />
+    <div class="gallery">
+
+                    
+                    <a href="site_files/portfolio/graphic/floyd layouts.jpg" rel="lightbox[graphic]" title="Pink Floyd Text Layout 1">
+
+                    <img src="site_files/portfolio/graphic/thumbs/floyd layoutsthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/graphic/floyd layouts2.jpg" rel="lightbox[graphic]" title="Pink Floyd Text Layout 2">
+                    <img src="site_files/portfolio/graphic/thumbs/floyd layouts2thumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/graphic/tag.jpg" rel="lightbox[graphic]" title="F+A Tag (figure/ground)">
+                    <img src="site_files/portfolio/graphic/thumbs/tagthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/graphic/stairwayfinished.jpg" rel="lightbox[graphic]" title="Tonality in Text">
+                    <img src="site_files/portfolio/graphic/thumbs/stairwayfinishedthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/graphic/maglayout.jpg" rel="lightbox[graphic]" title="Magazine Layout">
+                    <img src="site_files/portfolio/graphic/thumbs/maglayoutthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+
+                    
+                    <a href="site_files/portfolio/graphic/boatlayout.jpg" rel="lightbox[graphic]" title="Print Layout: Boat">
+                    <img src="site_files/portfolio/graphic/thumbs/boatlayoutthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/graphic/massagelayout.jpg" rel="lightbox[graphic]" title="Print Layout: Massage">
+                    <img src="site_files/portfolio/graphic/thumbs/massagelayoutthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/graphic/woodandlimeslayout.jpg" rel="lightbox[graphic]" title="Print Layout: Wood and Limes">
+                    <img src="site_files/portfolio/graphic/thumbs/woodandlimeslayoutthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+    </div>                
+
+</div></div>
+
+<!-- ---------------------------------------------5---------------------------------------------------- -->
+
+	
+	<div id="photography" class="popoutContainer"> 
+	<div class="content">
+		
+
+	<img src="site_files/images/photography.png" alt="photography" /><br />
+    <p>&nbsp;While 35mm photography was a bit of a passing hobby, I did enjoy it. This gallery consists of photographs taken 
+    	during 2006-07 both in Radford and my hometown of Dinwiddie. When I got a zoom lens...well...I became obsessed with
+        trying to catch the many squirrels on campus.</p>
+        
+      <div class="gallery">
+
+                    
+                    <a href="site_files/portfolio/35mm/dairyfreeze.jpg" rel="lightbox[photography]" title="Dairy Freeze">
+                    <img src="site_files/portfolio/35mm/thumbs/dairyfreezethumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/eye.jpg" rel="lightbox[photography]" title="Eye">
+
+                    <img src="site_files/portfolio/35mm/thumbs/eyethumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/gasstation.jpg" rel="lightbox[photography]" title="Gas Station">
+                    <img src="site_files/portfolio/35mm/thumbs/gasstationthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/intree.jpg" rel="lightbox[photography]" title="In Tree">
+                    <img src="site_files/portfolio/35mm/thumbs/intreethumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/open.jpg" rel="lightbox[photography]" title="Open, apparently">
+                    <img src="site_files/portfolio/35mm/thumbs/openthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/pinecone.jpg" rel="lightbox[photography]" title="Pine Cone">
+                    <img src="site_files/portfolio/35mm/thumbs/pineconethumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+
+                    
+                    <a href="site_files/portfolio/35mm/snacks.jpg" rel="lightbox[photography]" title="Snacks!">
+                    <img src="site_files/portfolio/35mm/thumbs/snacksthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/squirrel.jpg" rel="lightbox[photography]" title="Squirrel">
+                    <img src="site_files/portfolio/35mm/thumbs/squirrelthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/store.jpg" rel="lightbox[photography]" title="Store">
+                    <img src="site_files/portfolio/35mm/thumbs/storethumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/street.jpg" rel="lightbox[photography]" title="Street">
+                    <img src="site_files/portfolio/35mm/thumbs/streetthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/train.jpg" rel="lightbox[photography]" title="Train">
+
+                    <img src="site_files/portfolio/35mm/thumbs/trainthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+                    
+                    <a href="site_files/portfolio/35mm/window.jpg" rel="lightbox[photography]" title="Window">
+                    <img src="site_files/portfolio/35mm/thumbs/windowthumb.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+
+                    
+            
+              
+      </div>
+
+</div></div>
+
+<!-- ---------------------------------------------6---------------------------------------------------- -->
+	
+	<div id="aboutthissite" class="popoutContainer"> 
+	<div class="content">
+		
+
+	<img src="site_files/images/aboutthissite.png" alt="aboutthissite" /><br />
+
+    <p>This site is a culmination of many things. While most of the CSS was written by hand (save the browser specific functions and 
+    	such), some of the effects need to be credited elsewhere. If I was that pimp with JavaScript, I'd get paid more. Both MooTools.net and PhatFusion.net contributed heavily to some of the cooler things on the site. The 'Sliding Image Menu' comes directly
+        from phatFusion.net, and even that code is based heavily on the MooTools development kit, which also runs the DOMReady functions. The links to these two sites can be found below.</p>
+        
+        <div class="gallery" style="text-align:center">
+        <a href="http://www.mootools.net" target="_blank" title="MooTools.net : A compact JavaScript framework.">
+        <img src="site_files/images/mootools.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+        
+        <a href="http://www.phatfusion.net" target="_blank" title="PhatFusion.net">
+        <img src="site_files/images/phatfusion.jpg" alt="thumb" width="150" height="65" border="0" /></a>
+        </div><br />
+        
+        <p>The origins of the word 'knarfishness', as promised, is this. WAAAY back, early 2005, I started playing the MMORPG
+        World of Warcrack...er...Warcraft. I needed a cool name for a character. Well, I'm Frank. That was taken. Tried 'thefrank'.
+        Also taken. So I thought...backwards. Knarf. As so Knarf was born, in some shallow grave, or wherever zombies come from. 
+        After a poorly thought out server transfer, somebody took the name Knarf, and I had to rename him. I thought about just
+        'Knarfish', but people kept asking me what kind of fish that was. So I ended up, after about 2hrs of deliberation, at 'knarfishness'. It stuck, and when my graphic design teacher informed me that a catchy business title was necessary to success, I knew I already had something unique. Thanks for visiting knarfishness.net. :)</p>
+
+        
+
+</div></div>
+
+  <!-- ---------------------------------------------------footer---------------------------------------------- -->     
+  
+
+  
+      
+  
+	<!-- Footer -->
+	<div id="footer">
+		<a class="left" href="javascript:;" onClick="openThumbs('6');">About this Site</a>
+		<a class="right" href="mailto:favery@radford.edu">Contact by Email</a>	</div>
+	</div>
+
+<!-- Lightbox Setups -->
+
+	<div style="visibility: hidden; opacity: 0;" id="lbOverlay"></div>
+	<div style="width: 250px; height: 250px; margin-left: -125px; display: none;" id="lbCenter">
+    	<div id="lbImage"></div>
+    </div>
+
+	<div style="display: none;" id="lbBottom"><a style="display: none;" href="#" id="lbPrevLink"></a><a style="display: none;" href="#" id="lbNextLink"></a>
+		<div style="clear: both;"></div>
+        <a href="#" id="lbCloseLink"></a>
+
+        <div id="lbCaption"></div>
+        <div id="lbNumber"></div><div style="clear: both;"></div>
+    </div>
+</body>
+
+
+</html>
